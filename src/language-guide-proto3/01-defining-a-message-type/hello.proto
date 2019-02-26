@@ -1,0 +1,17 @@
+/*
+ * 1. 首先需要安装 protoc 编译器，protoc 当前没有发布到 npmjs，只能下载预编译的包进行安装，
+ *        下载地址：https://github.com/protocolbuffers/protobuf/releases，
+ *        下载 protoc-3.7.0-rc-3-win64.zip 并解压，将 bin 目录添加到系统环境变量，
+ * 2. 通过命令生成 js 文件：
+ *        protoc --js_out=import_style=commonjs,binary:. hello.proto
+ *        --js_out 表示：              要编译生成的目标文件是 js 文件，
+ *        import_style=commonjs 表示： 使用 commonjs 模块系统，默认为 closure 模块系统，
+ *        . 表示：                     编译生成的 js 文件保存在当前目录下，
+ *        hello.proto 表示:            .proto 源文件，可以有多个，使用空格分隔，
+ */
+
+syntax = "proto3";
+
+message Person {
+    string name = 1;
+}
