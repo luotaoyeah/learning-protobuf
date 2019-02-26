@@ -1,5 +1,6 @@
 /node_modules
 /dist
+/dist-development
 .DS_Store
 .idea
 *.iml
