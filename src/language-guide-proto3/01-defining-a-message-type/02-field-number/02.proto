@@ -1,0 +1,14 @@
+// 指定语法版本，默认是 proto2
+syntax = "proto3";
+
+message SearchRequest {
+    // string 表示字段的类型，可以是简单类型（scalar type），也可以是复合类型（composite type）
+    string query = 1;
+    // 字段名称后面使用一个唯一的数字来标识该字段，称之为 field number，可以使用的数字范围为 [1, 2^29 - 1]，
+    // 其中 1到15 会使用一个字节来进行编码，16到2047 会使用两个字节来进行编码，
+    int32 page_number = 2;
+    int32 result_per_page = 3;
+
+    // 其中 19000到19999 是保留给 protobuf 使用的，我们不能使用
+    // int32 use_reserved_number = 19000; // Field numbers 19000 through 19999 are reserved for the protocol buffer library implementation.
+}
