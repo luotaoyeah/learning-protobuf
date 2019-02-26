@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+message Person {
+    // 字段的重复规则：
+    //     可以是单一类型（scalar），表示该字段可以出现0次或者1次，
+    //     可以是重复类型（repeated），表示该字段可以出现0次或者多次，
+    //         对于 js 来说，生成的类中该字段是一个数组类型（Array），
+    //         可以添加元素，可以清空数组，可以获取整个数组，
+    string name = 1;
+    repeated int32 score = 2;
+}

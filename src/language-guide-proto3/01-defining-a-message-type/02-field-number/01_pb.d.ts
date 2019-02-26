@@ -1,5 +1,5 @@
 // package: 
-// file: src/language-guide-proto3/01-defining-a-message-type/02-field-number/02.proto
+// file: src/language-guide-proto3/01-defining-a-message-type/02-field-number/01.proto
 
 import * as jspb from "google-protobuf";
 
