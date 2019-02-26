@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+message Foo {
+    /*
+     * 可以通过 reserved 关键字，设置保留的 field name 和 field number，
+     * 设置之后，在当前 message 中，就不能再使用这些 name 和 number，否则编译报错，
+     * 保留字的主要作用，是用来防止冲突，比如以前的某个字段现在不用了，
+     * 我们在把它删除之后，可以将它设置为保留字，防止后面不小心又使用了这个字段，跟以前的字段发生冲突
+     */
+
+    // 可以使用  x to y 的形式指定一个数字范围
+    reserved 9, 22 to 33;
+    // 多个值之间使用逗号（,）分隔
+    reserved "foo", "bar";
+
+    // string x = 9; // Field "x" uses reserved number 9.
+    // string foo = 1; // Field name "foo" is reserved.
+}
