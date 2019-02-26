@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-// 同一个 .proto 文件中，可以定义多个 message 类型
+// 在同一个 .proto 文件中，可以定义多个 message 类型
 
 message Person {
     string name = 1;

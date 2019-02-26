@@ -6,6 +6,7 @@
  *        protoc --js_out=import_style=commonjs,binary:. hello.proto
  *        --js_out 表示：              要编译生成的目标文件是 js 文件，
  *        import_style=commonjs 表示： 使用 commonjs 模块系统，默认为 closure 模块系统，
+ *                                    当前不支持 ESM 模块系统，
  *        . 表示：                     编译生成的 js 文件保存在当前目录下，
  *        hello.proto 表示:            .proto 源文件，可以有多个，使用空格分隔，
  */

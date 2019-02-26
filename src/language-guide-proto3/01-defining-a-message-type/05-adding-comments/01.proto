@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+/*
+ * 在 .proto 文件中支持C/C++风格的单行注释和多行注释
+ */
+message Foo {
+    // 生成的 js 文件中不会包含注释信息
+    string bar = 1;
+}
