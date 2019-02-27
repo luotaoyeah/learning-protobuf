@@ -1,0 +1,45 @@
+syntax = "proto3";
+
+/*
+ * protobuf 支持的 scalar type 有下面这些
+ */
+message Foo {
+    // 对应 js 中的类型：number
+    double a = 1;
+    // 对应 js 中的类型：number
+    float b = 2;
+
+    // 对应 js 中的类型：number
+    int32 c = 3;
+    // 对应 js 中的类型：number
+    int64 d = 4;
+
+    // 对应 js 中的类型：number
+    uint32 e = 5;
+    // 对应 js 中的类型：number
+    uint64 f = 6;
+
+    // 对应 js 中的类型：number
+    sint32 g = 7;
+    // 对应 js 中的类型：number
+    sint64 h = 8;
+
+    // 对应 js 中的类型：number
+    // 固定 4 个字节
+    fixed32 i = 9;
+    // 对应 js 中的类型：number
+    // 固定 8 个字节
+    fixed64 j = 10;
+
+    // 对应 js 中的类型：number
+    sfixed32 k = 11;
+    // 对应 js 中的类型：number
+    sfixed64 l = 12;
+
+    // 对应 js 中的类型：boolean
+    bool m = 13;
+    // 对应 js 中的类型：string
+    string n = 14;
+    // 对应 js 中的类型：Uint8Array
+    bytes o = 15;
+}

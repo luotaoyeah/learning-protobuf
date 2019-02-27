@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "rimraf ./dist-development && webpack && node ./dist-development/index.js",
-    "protoc": "protoc --js_out=import_style=commonjs,binary:. --ts_out=. --plugin=protoc-gen-ts=D:/project/git/luotaoyeah/learning-protobuf/node_modules/.bin/protoc-gen-ts.cmd src/language-guide-proto3/01-defining-a-message-type/07-whats-generated-from-your-proto/01.proto"
+    "protoc": "protoc --js_out=import_style=commonjs,binary:. --ts_out=. --plugin=protoc-gen-ts=D:/project/git/luotaoyeah/learning-protobuf/node_modules/.bin/protoc-gen-ts.cmd src/language-guide-proto3/02-scalar/01/01.proto"
   },
   "dependencies": {
     "google-protobuf": "^3.7.0-rc.3",
