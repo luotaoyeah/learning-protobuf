@@ -20,8 +20,10 @@ message Foo {
     uint64 f = 6;
 
     // 对应 js 中的类型：number
+    // signed integer number
     sint32 g = 7;
     // 对应 js 中的类型：number
+    // signed integer number
     sint64 h = 8;
 
     // 对应 js 中的类型：number

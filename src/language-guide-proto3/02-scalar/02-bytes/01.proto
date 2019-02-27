@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+message Foo {
+    /*
+     * bytes 类型比较特殊，它生成的 js 文件中的字段类型为：Uint8Array | string
+     */
+    bytes x = 1;
+
+    bytes y = 2;
+}

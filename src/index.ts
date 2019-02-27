@@ -1,1 +1,1 @@
-import "./language-guide-proto3/01-defining-a-message-type/07-whats-generated-from-your-proto/01";
+import "./language-guide-proto3/02-scalar/02-bytes/01";
