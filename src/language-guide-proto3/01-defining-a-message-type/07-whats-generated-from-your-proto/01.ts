@@ -13,19 +13,19 @@ console.log(person.getAge()); // 18
 
 console.log("\n-------------------------------------------------- 02");
 /*
- * 可以通过 toObject() 方法，获取JSON对象格式的数据
+ * 可以通过 toObject() 方法，获取JSON格式的数据
  */
 console.log(person.toObject()); // { name: 'foo', age: 18 }
 
 console.log("\n-------------------------------------------------- 03");
 /*
- * 可以通过 serializeBinary() 方法，将数据转换为二进制数据（Uint8Array）
+ * 可以通过 Message.prototype.serializeBinary() 方法，将对象数据转换为二进制数据（Uint8Array）
  */
 console.log(person.serializeBinary()); // Uint8Array [ 10, 3, 102, 111, 111, 16, 18 ]
 
 console.log("\n-------------------------------------------------- 04");
 /*
- * 可以通过 deserializeBinary() 静态方法，将二进制数据转换为对象
+ * 可以通过 Message.deserializeBinary() 静态方法，将二进制数据转换为对象
  */
 console.log(
   Person.deserializeBinary(
