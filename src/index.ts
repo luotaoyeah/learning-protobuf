@@ -1,1 +1,1 @@
-import "./language-guide-proto3/03-default-values/01/01";
+import "./language-guide-proto3/04-enum/01/01";
