@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+message M {
+    /*
+     * 枚举成员可以定义别名，即多个不同名称的成员，对应的是相同的值，
+     * 此时，需要设置 option allow_alias=true，如下所示，
+     * 如果不这样设置，编译的时候会报错：
+     *     "M.C" uses the same enum value as "M.B". If this is intended, set 'option allow_alias = true;' to the enum definition.
+     */
+    enum E {
+        option allow_alias = true;
+        A = 0;
+        B = 9;
+        C = 9;
+    }
+
+    E e01 = 1;
+    E e02 = 2;
+}
