@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+/*
+ * 当 enum 定义在某个 message 的里面时，
+ * 在其他地方，可以通过 MessageType.EnumType 的语法形式，访问这个 enum，
+ * 相当于在外面添加了一层命名空间（namespace）
+ */
+message M01 {
+    enum E {
+        A = 0;
+        B = 1;
+    }
+}
+
+message M02 {
+    M01.E e = 1;
+}
