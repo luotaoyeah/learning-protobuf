@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+/*
+ * enum 可以定义在 message 的里面，也可以定义在 message 的外面，
+ * 如果定义在 message 的外面，则其他的 message 也可以使用这个 enum
+ */
+
+enum E {
+    A = 0;
+    B = 1;
+}
+
+message M01 {
+    E e = 1;
+}
+
+message M02 {
+    E e = 1;
+}
